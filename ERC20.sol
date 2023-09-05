@@ -9,6 +9,8 @@ contract ERC20Token {
 
 
     event Approval(address indexed tokenOwner, address indexed spender, uint token);
+
+//event and emit uses together to store or view information on inside blockchain
     event Transfer(address indexed from, address indexed to, uint tokens);
 
 
@@ -19,11 +21,12 @@ contract ERC20Token {
     uint256 totalSupply_;
 
 
-
+//for intialization we use constructor 
 
    constructor() {  
 
-	totalSupply_ = 10000000000000000000000000000000000000000000000000000000; 
+	totalSupply_ = 10000000000000000000000000000000000000000000000000000000;
+ //one hundred thousand crore token
 	balances[msg.sender] = totalSupply_; 
 
     }  
