@@ -8,7 +8,7 @@ contract ERC20Token {
     uint8 public constant decimals = 18;  
 
 
-    event Approval(address indexed tokenOwner, address indexed spender, uint tokens);//emit aur event do bhai bhai hai
+    event Approval(address indexed tokenOwner, address indexed spender, uint token);
     event Transfer(address indexed from, address indexed to, uint tokens);
 
 
